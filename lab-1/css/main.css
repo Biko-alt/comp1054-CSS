@@ -1,0 +1,54 @@
+h1 {
+    font-family: "Archivo Narrow", Arial, sans-serif;
+    font-size: 1.8em;
+    color: black;
+    text-align: left;
+    border: 2px solid black;
+    padding: 5px;
+    display: inline-block;
+}
+
+h2 {
+    font-family: "Archivo Narrow", Arial, sans-serif;
+    font-size: 5em;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header p {
+    font-family: "Archivo Narrow", Arial, sans-serif;
+    font-size: 1.4em;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#page {
+	width: 70%;
+    background-color: white;
+    margin: 40px auto;
+	padding: 5%;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
+}
+
+/* Multi-column layout
+-------------------------------------------------- */
+main {
+  column-count: 3;
+
+}
+main p:first-child {
+  margin-top: 0;
+}
+
+main p {
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    color: black;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+
