@@ -17,14 +17,19 @@ body {
 	width: 80%;
 	margin: 0 auto;
 	/* STEP 1: Set the container to display: grid; */
-	
+	display: grid;
 	/* STEP 7: Plot out the grid-template-areas */
-	
+	grid-template-areas: 
+		"header header header"
+		"subnav content advert"
+		"footer footer footer";
+	;
 	/* STEP 8: Control the width of the grid rows */
-	
+	grid-template-columns: 150px auto 100px;;
 	/* STEP 9: Control the width of the grid columns (try the fr unit) */
-	
+	grid-template-columns: 20% 60% 20%;
 	/* STEP 10b: Set the grid-gap */
+	gap: 1rem;
 	
 }
 
@@ -32,6 +37,7 @@ header {
 	border: 5px dotted blue;
 	background: #CCF;
 	/* STEP 2: Identify the header as a grid-area */
+	grid-area: auto;
 	
 	/* STEP 11a: Fix the <header> - set display: flex; to have the <h1> and the <nav> sit beside each other */
 	
@@ -53,6 +59,7 @@ header nav ul li {
 	border: 5px dotted green;
 	background: #CFC;
 	/* STEP 3: Identify the nav as a grid-area */
+	grid-area: subnav;
 	
 }
 
@@ -60,6 +67,7 @@ section {
 	border: 5px dotted darkorange;
 	background: #FC9;
 	/* STEP 4: Identify the section as a grid-area */
+	grid-area: content;
 	
 }
 
@@ -67,6 +75,7 @@ aside {
 	border: 5px dotted purple;
 	background: #C9C;
 	/* STEP 5: Identify the aside as a grid-area */
+	grid-area: advert;
 	
 }
 
@@ -74,6 +83,7 @@ footer {
 	border: 5px dotted orange;
 	background: #FF9;
 	/* STEP 6: Identify the footer as a grid-area */
+	grid-area: footer;
 	
 }
 
@@ -83,5 +93,5 @@ header,
 #container > aside,
 footer {
     /* STEP 10a: add some padding to the main layout containers to give the text some room to breathe - see the effect in the browser, then comment this out and head up to the #container rule for an alternative */
-    
+    padding: 1rem;
 }
