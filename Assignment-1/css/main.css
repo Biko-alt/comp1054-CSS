@@ -1,6 +1,6 @@
 /* Typography Setup */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: #111;
     color: #f5f5f5;
     line-height: 1.6;
@@ -9,11 +9,19 @@ body {
 
 /* Display front for headings */
 h1, h2, h3 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
     letter-spacing: 2px;
 }
 
 /* Layout using CSS Grid */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Header Styling */
 header {
     border-bottom: 2px solid #444;
     padding-bottom: 1rem;
@@ -39,6 +47,7 @@ section h2 {
 
 /* Lyrics Styling */
 blockquote {
+    font-family: "Archivo Narrow", sans-serif;
     border-left: 4px solid #fff;
     padding-left: 1rem;
     font-style: italic;
