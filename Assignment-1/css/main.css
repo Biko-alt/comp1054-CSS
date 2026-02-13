@@ -1,7 +1,7 @@
 /* Typography Setup */
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: #111;
+    background: #121212;
     color: #f5f5f5;
     line-height: 1.6;
     padding: 2rem;
@@ -14,6 +14,7 @@ h1, h2, h3 {
     font-weight: 700;
     font-style: normal;
     letter-spacing: 2px;
+    color: #1DB954
 }
 
 /* Layout using CSS Grid */
@@ -27,13 +28,17 @@ main {
 /* Header Styling */
 
 header {
-    /* CSS text effect */
-    background: linear-gradient(360deg, #121a15, #2df18f);
-    padding: 2rem;
+    border-bottom: 2px solid #1DB954;
+    padding-bottom: 1rem;
 }
 
 header h1 {
     font-size: clamp(3rem, 6vw, 5rem);
+
+    /* CSS text effect */
+    background: linear-gradient(90deg, #1DB954, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 /* Article Sections */
@@ -63,6 +68,7 @@ aside {
     border-left: 1px solid green;
     padding-left: 1rem;
     font-size: 0.9rem;
+    color: #b3b3b3;
 }
 
 /* Footer */
@@ -72,11 +78,13 @@ footer {
     padding-top: 1rem;
     font-size: 0.8rem;
     opacity: 0.7;
+
 }
 
 /* Advanced selector examples */
 section p:first-letter {
     font-size: 1.2rem;
+    color: #b3b3b3;
 }
 
 blockquote p br + br {
@@ -87,4 +95,5 @@ blockquote p br + br {
 h2:hover{
     transform: translateX(5px);
     transition: transform 0.3s ease;
+    color: #1ed760;
 }
