@@ -30,25 +30,25 @@
 		.vertical-down {
 
 			/* default gradient, so you don't need to specify "to bottom" before the colors */
-
+			background: linear-gradient(silver, black);
 		}
 		.vertical-up {
-
+			background: linear-gradient(to top, silver, black);
 		}
 		/* Horizontal */
 		.horizontal-rt {
-
+			background: linear-gradient(to right, silver, black);
 		}
 		.horizontal-lt {
-
+			background: linear-gradient(to left, silver, black);
 		}
 		/* Diagonal Angles */
 		.angle-corners {
-
+			background: linear-gradient(to bottom right, silver, black);
 		}
 		/* Angles via Degrees */
 		.angle-deg {
-
+			background: linear-gradient(45deg, silver, black);
 		}
 
 		/* STEP 2: RADIAL GRADIENTS
@@ -57,13 +57,13 @@
 
 		}
 		.radial-center {
-
+			background: radial-gradient(yellow, lime);
 		}
 		.radial-top {
-
+			background: radial-gradient(at right, yellow, lime);
 		}
 		.radial-size-1 {
-
+			background: radial-gradient(ellipse at bottom, yellow, lime);
 		}
 		.radial-size-2 {
 
@@ -72,16 +72,25 @@
 		/* STEP 3: LINEAR GRADIENTS WITH COLOR STOPS
 		------------------------------------------ */
 		.color-stops div {
+			background: linear-gradient(to right, silver, black);
+			width: 300px;
 		}
 
 		.color-stops p {
+			width: 300px;
+			padding-top: 2.5em;
+			font-size: 1em;
 		}
 
 		.color-stops {
-
+			background: linear-gradient(to right, silver 0%, black 100%);
+			width: 300px;
 		}
 		/* STEP 4: Use a color gradient CSS generator - http://www.colorzilla.com/gradient-editor/ */
 		.gradient-generator {
+			background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff);
+			width: 300px;
+			height: 50px;
 
 		}
 	</style>
