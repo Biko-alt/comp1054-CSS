@@ -1,0 +1,39 @@
+/* GENERAL PAGE STYLING */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* PAGE CONTAINER */
+#container {
+    width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e36c2d;
+    border-left: 4px solid #e36c2d;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+/* IMAGE */
+article img {
+    float: left;
+    width: 430px;
+    height: auto;
+    margin: 0 30px 20px 0;
+}
+
