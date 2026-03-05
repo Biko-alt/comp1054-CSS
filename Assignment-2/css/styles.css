@@ -37,3 +37,57 @@ article img {
     margin: 0 30px 20px 0;
 }
 
+/* ARTICLE */
+article > h2:first-of-type{
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+}
+
+/* SUBHEADINGS */
+article h2 {
+    font-size: 18x;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* ARTICLE TEXT */
+article p{
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+article > p:first-of-type strong {
+    color: #e36c2d;
+}
+
+/* QUOTES */
+q{
+    font-style: italic;
+}
+
+/* ABBREVIATIONS */
+abbr{
+    border-bottom: 1px dotted #999;
+    cursor: help;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 13px;
+    color: #666;
+}
+
+footer em{
+    font-style: normal;
+    font-weight: bold;
+}
+
