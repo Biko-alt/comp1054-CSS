@@ -93,9 +93,24 @@
 			}
 
 			/* STEP 7a: Build out the styles for the pullquote, adding the class="pullquote2" to the SPAN element in the HTML to see how the styles look */
-
+			.pullquote2 {
+				float: right;
+				width: 40%;
+				font-family: "Arial Black", Arial, sans-serif;
+				font-size: 150%;
+				margin: 0.5em;
+				color: #333;
+				text-shadow: 3px 3px 0 #ccc;
+				letter-spacing: -0.05em;
+			}
 			/* STEP 7b: Add leading quotation marks and style them */
-
+			.pullquote2::before {
+				content: "“";
+				font-size: 300%;
+				vertical-align: top;
+				color: #ccc;
+				text-shadow: 3px 3px 0 #333;
+			}
 			/* STEP 7c: Remove the class"pullquote2" from the HTML */
 			footer {
 				background: #ccc;
@@ -187,6 +202,7 @@
 		// STEP 4a: Get the 'Back to top' button from the DOM with a const topButton
 		const topButton = document.querySelector('footer a.top');
 		// STEP 8a: Assign any and all elements with the class="pullquote" to the const pullQuote
+		const pullQuote = document.querySelectorAll('.pullquote');
 		
 		// STEP 2c: Build an event listener for the scroll event (https://developer.mozilla.org/en-US/docs/Web/Events/scroll)
 		window.addEventListener('scroll', function() {
@@ -221,16 +237,17 @@
 				});
 			}
 			// STEP 8b: Write a forEach loop to duplicate the pullquote text and insert it into the page
+			pullQuote.forEach(function(quote) {
 			
 				// STEP 8c: Get the parent element
-				
+				const parentElem = element.parentNode;
 				// STEP 8d: Clone the element (https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode)
-				
+				let clone = element.cloneNode(true);
 				// STEP 8e: Add a special class to the cloned SPAN element
-				
+				clone.classList.add('pullquote2');
 				// STEP 8f: Insert cloned element into the DOM
-				
-			
+				parentElem.prepend(clone);
+			});
 			// STEP 9a: Move this entire JavaScript into an external file and put it into the /js folder
 			/* Animated scrolling of page to top function inspired by the great tutorial at https://dzone.com/articles/back-to-top-pure-javascript and the MDN page about scrollBy() at https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy */
 		</script>
