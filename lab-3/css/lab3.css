@@ -44,6 +44,7 @@ html {
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 	font-weight: 600;
+	transition: background .2s ease;
 }
 
 .tabs li a:hover {
