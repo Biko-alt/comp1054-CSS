@@ -5,26 +5,34 @@ html {
 }
 /* STEP 7: Collapse borders */
 table {
-
-/* STEP 9a: Adjust placement of table caption */
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* STEP 9a: Adjust placement of table caption */
+    caption-side: top;
 
 /* STEP 9b: Try different values for table-layout (https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout) in conjunction with the width property. */
 
 }
 /* STEP 10b: Zebra striping for columns */
 col:nth-child(2) {
-
+    background: rgba(225,225,225,0.5);
 }
 
 /* STEP 8: Adjust padding for usability with TH and TD */
 td, th {
-
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 th {
     background: rgba(225,225,225,1);
 }
 /* STEP 6: Align table headings in the table body */
 tbody th {
+    text-align: left;
+    
 
 }
 thead tr:first-child th:first-child {

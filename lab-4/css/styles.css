@@ -10,10 +10,56 @@ h1{
     margin-bottom: 25px;
 }
 
-.standings thead{
+.standings{
     width: 90%;
     margin: auto;
     border-collapse: collapse;
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.standings thead{
+    background:#041e42;
+    color: white;
+}
+
+.standings th{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    cursor: pointer;
+    position: relative;
+}
+
+.sortable::after {
+    content: "↑↓";
+    font-size: 12px;
+    margin-left: 6px;
+    opacity: 0.6;
+}
+
+.standings td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.standings td:first-child{
+    text-align: left;
+    font-weight: 600;
+}
+
+.standings tbody tr:nth-child(even){
+    background: #f2f2f2;
+}
+
+.standings tbody tr:hover{
+    background: #e8f2ff;
+}
+
+.note{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
 }
