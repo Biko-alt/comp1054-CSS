@@ -1,0 +1,25 @@
+/* Page setup */
+body {
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Glow box */
+.animated-glow {
+  border: 2px solid #ff00ff;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Animation */
+@keyframes glow {
+  
+}
