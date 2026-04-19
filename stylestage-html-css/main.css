@@ -1,3 +1,8 @@
+/* SOURCES
+-MDN Web Docs (Flexbox, Grid, Media Queries)
+-Style Stage (Design inspoiration)
+ */
+
 /* RESET BASE STYLES */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -110,7 +115,7 @@ footer {
 
 /* VISUAL ENHANCEMENTS */
 section:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px); /*Form https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translateY*/
     transition: 0.3s;
 }
 
